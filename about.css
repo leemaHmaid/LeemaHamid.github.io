@@ -644,4 +644,7 @@ footer .row1 .search input{
 form{
     margin : 30px;
 }
+body{
+    overflow : hidden;
+}
 }
