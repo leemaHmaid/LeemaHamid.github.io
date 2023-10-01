@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>About</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-div">
+          <a href=""><img id="logo" src="./images/transparent.png" alt="" /></a>
+          <a id="logo-name" href=""><p>BrainGate</p></a>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="#s">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Contact Us</h1>
+      </div>
+    </header>
+    <section class="form">
+      <div class="outter-flex">
+        <form>
+          <div class="first-row">
+            <input type="text" placeholder="Enter your name" class="name" />
+            <input type="email" placeholder="Enter your email" class="name" />
+          </div>
+          <textarea placeholder="Enter your message"></textarea>
+          <input type="text" placeholder="Enter the subject" class="subject" />
+          <button type="submit">Send</button>
+        </form>
+        <div class="address">
+          <ul class="add-items">
+            <li>
+              <img src="./images/icons8-home-50.png" alt="" class="img-icon" />
+              <p class="para-add">
+                Khartoum , sudan.<br />
+
+                Street2, Address
+              </p>
+            </li>
+            <li>
+              <img src="./images/icons8-phone-50.png" alt="" class="img-icon" />
+              <p class="para-add">
+                <b> +249 990 83787 232</b> <br />
+                mon to fri 9-5
+              </p>
+            </li>
+            <li>
+              <img src="./images/icons8-email-50.png" alt="" class="img-icon" />
+              <p class="para-add">
+                <b> myemail@support.com </b> <br />
+                feel free and conact us!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------Footer------------------------------------------------------------>
+    <footer>
+      <div class="row1">
+        <div class="search">
+          <h3>Stay Updated</h3>
+          <input placeholder="Enter your email" type="email" />
+          <button>Subscribe now</button>
+        </div>
+        <div class="social-pres">
+          <h3>Find Us</h3>
+          <a href="#" class="fa fa-facebook" alt="FB"></a>
+          <a href="#" class="fa fa-twitter" alt="TW"></a>
+          <a href="#" class="fa fa-linkedin" alt="LK"></a>
+          <a href="#" class="fa fa-google" alt="GL"></a>
+          <a href="#" class="fa fa-instagram" alt="IG"></a>
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-row-item">
+          <h3>About Us</h3>
+          <ul class="footer-cnt">
+            <a href="#"><li>Online Learning</li></a>
+            <a href="#"><li>About US</li></a>
+            <a href="#"><li>Careers</li></a>
+            <a href="#"><li>Press Center</li></a>
+            <a href="#"><li>Become An Instructor</li></a>
+          </ul>
+        </div>
+
+        <div class="grid-row-item">
+          <h3>Campus</h3>
+          <ul>
+            <a href="#"><li>Our Plans</li></a>
+            <a href="#"><li>Free Trial</li></a>
+            <a href="#"><li>Academic Solutions</li></a>
+            <a href="#"><li>Business Solutions</li></a>
+            <a href="#"><li>Government Solutions</li></a>
+          </ul>
+        </div>
+
+        <div class="grid-row-item">
+          <h3>Study</h3>
+          <ul>
+            <a href="#"><li>Admissions Policy</li></a>
+            <a href="#"><li>Getting Started</li></a>
+            <a href="#"><li>Online Application</li></a>
+            <a href="#"><li>Visa Information</li></a>
+            <a href="#"><li>Tuition Calculator</li></a>
+          </ul>
+        </div>
+
+        <div class="grid-row-item">
+          <h3>Support</h3>
+          <ul>
+            <a href="#"><li>Support</li></a>
+            <a href="#"><li>Contact Us</li></a>
+            <a href="#"><li>System Requirements</li></a>
+            <a href="#"><li>Register Activation Key</li></a>
+            <a href="#"><li>Site feedback</li></a>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        copyright &copy;2023 All rights reserved | made by Leema
+      </p>
+    </footer>
+
+    <!-----------Script------------>
+    <script>
+      const navLinks = document.getElementById("nav-links");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+    </script>
+  </body>
+</html>

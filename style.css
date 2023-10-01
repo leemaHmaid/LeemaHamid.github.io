@@ -1,0 +1,602 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding: 0;
+     
+    
+}
+
+header{
+    min-height: 100vh;
+    width:100%;
+    background-image:linear-gradient(rgb(164,223,185,0.7),rgb(164,223,185,0.7)),url(images/webcam.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo-div{
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width: 90px;
+    height: 70px;
+}
+#logo-name{
+    text-decoration: none;
+    color:rgb(22, 119, 87);
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:rgb(22, 119, 87);
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+
+}
+.nav-links ul li a:hover{
+  color:rgb(112, 182, 147)
+
+}
+.text-box{
+    width:90%;
+    color: rgb(97, 55, 119);
+    position:absolute;
+    top:50%;
+    left: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 40px;
+    margin: 15px;
+}
+.start{
+    margin-top: 50px;
+    border: 1px solid rgb(210, 84, 45);
+    border-radius: 15px;
+    background-color:rgb(210, 84, 45) ;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    width: 200px;
+    height: 60px;
+}
+.start:hover{
+    background-color: transparent;
+    color: rgb(210, 84, 45);
+    cursor:pointer ;
+    transition: 1s;
+}
+nav .fa-solid{
+    display: none;
+}
+ 
+/*--------------------------------------------Courses--------------------------------*/
+.course{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course .title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(210, 84, 45);
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+
+}
+.course h1{
+    font-size: 39px;
+    font-weight: 700;
+    color:rgb(61, 6, 87);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px;
+}
+/*---------------------------------------------Grid-------------------------------------------------*/
+.grid-container {
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: auto auto auto;
+   
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(3, 77, 52,0.2);
+    padding: 30px;
+    text-align:left;
+    box-sizing: border-box;
+}
+.grid-item:hover{
+    background-color: rgba(3, 77, 52,0.5);
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.grid-container .grid-item  p {
+    font-size: 15px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: -12px;
+}
+.grid-container .grid-item  a {
+    text-decoration: none;
+    padding: 10px;
+    margin: -12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color :  rgb(3, 77, 52);
+}
+.find-btn{
+    margin-top: 50px;
+    border: 1px solid rgb(61, 6, 87);
+    border-radius: 15px;
+    background-color:rgb(61, 6, 87);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    width: 200px;
+    height: 60px;
+    
+}
+ 
+.find-btn:hover{
+    background-color: transparent ;
+    color:rgb(61, 6, 87);
+    transition-duration: 1s;
+
+}
+/*---------------------------------courses-------------------------------------*/
+ 
+.tut-grid-container{
+    display: grid;
+    gap: 0px 50px;
+    grid-template-columns: auto auto auto ;
+    justify-content: unset;
+    overflow: scroll;
+}
+.tut-gird-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+}
+.tut-grid-container::-webkit-scrollbar{
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .tut-grid-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.tut-img{
+    max-width:300px;
+    max-height:226px;
+}
+.rating{
+    border:1px solid rgba(3, 77, 52,0.2); 
+    padding:40px;
+  
+}
+.rating h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(3, 77, 52);
+}
+.checked {
+    color: orange;
+  }
+.tut-img:hover{
+    transform: scale(1.4);
+    transition: 1s;
+}
+.stars{
+     padding: 20px;
+     margin:30px;
+    
+}
+.fa{
+    float:left;
+}
+.rev-num{
+    float: right;
+    color:rgba(3, 77, 52,0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin-left:20px;
+}
+/*----------------------------------Tutors--------------------------------------------------*/
+.tutors{
+    min-height:90vh;
+    background-color:rgba(3, 77, 52,0.5);
+    margin-top: 100px; 
+    text-align: center;
+    padding: 100px;
+}
+.tutors-para{
+    width:auto;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:200;
+    margin: 100px auto;
+    font-size:30px;
+}
+.tutors-info{
+     display: grid;
+     gap: 0px 20px;
+     grid-template-columns: auto auto auto auto;
+     justify-content: unset;
+     overflow: scroll;
+      
+}
+.tutors-info::-webkit-scrollbar{
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .tutors-info {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.card img{
+    width :90%;
+}
+ 
+ 
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+     
+
+}
+.name-info{
+    width:14rem;
+    padding:10px; 
+    border: 1px solid rgba(82, 112, 102, 0.2);
+    background-color: aliceblue; 
+
+}
+.card .name-info h3{
+    font-size: medium;
+    color:rgba(3, 77, 52,0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.social-media{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    
+    
+   
+}
+.social-media .fa {
+    display: inline-block;
+    background-color: rgb(230, 119, 119);
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    color :rgb(226, 236, 233);
+    text-align: center;
+    text-decoration: none;
+    border: 1px rgb(230, 119, 119) solid;
+    border-radius: 80px;
+    margin: 10px;
+} 
+.social-media a:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  
+  .social-icons a:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  
+  .social-icons a:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+.card img:hover{
+    cursor: pointer;
+}
+ 
+.card img:hover + .social-media{     
+    display: flex;
+    transition: 0.5s;
+}
+/* ---------------------------call---------------------------------------- */
+.cat{
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(85, 119, 102, 0.5),rgba(85, 119, 102, 0.5)),url(images/team.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding:100px 0px;
+}
+.cat h1{
+    color:antiquewhite;
+    padding: 10px;
+    margin-bottom: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cat a{
+    text-decoration: none;
+    padding: 20px;
+    
+}
+/* --------------------------------------Footer------------------------------------------------ */
+footer{
+    
+    max-width: 100%;
+    background-color: rgba(210, 84, 45,0.7);
+    padding: 50px;
+}
+footer .row1{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:50px;
+}
+
+footer .row1 .search h3{
+          color: white;
+          margin-bottom: 20px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search input{
+    border: 1px rgb(204, 203, 203) solid;
+    /* border-radius: 8px; */
+    width: 300px;
+    height: 30px;
+    padding: 8px;
+    margin: 0;
+}
+.search input:hover{
+   border: 2px rgb(30, 1, 37) solid;
+}
+.search button{
+    border: none solid grey;
+    border: 1px rgb(62, 3, 77) solid;
+    border-radius: 0px;
+    margin: 0;
+    height: 48px;
+    background-color: rgb(62, 3, 77);
+    color: rgb(241, 240, 245);
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search button:hover{
+    color:rgb(62, 3, 77);
+    background-color: transparent;
+    
+}
+ 
+.social-pres h3{
+    color: white;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.social-pres .fa{
+     
+    border-radius:20px;
+    text-decoration: none;
+    padding: 20px;
+    margin:5px;
+    font-size: 20px;
+    color:white;
+}
+.social-pres .fa-facebook{
+    background-color: rgb(115, 122, 218);
+    border: 1px rgb(115, 122, 218) solid ;
+}
+.social-pres .fa-twitter{
+    background-color: rgb(3, 41, 77);
+    border: 1px rgb(3, 41, 77) solid ;
+}
+.social-pres .fa-linkedin{
+    background-color: rgb(59, 60, 156);
+    border: 1px rgb(59, 60, 156) solid ;
+}
+.social-pres .fa-google{
+    background-color: rgb(221, 71, 1);
+    border: 1px rgb(221, 71, 1) solid ;
+}
+.social-pres .fa-instagram{
+    background-color: rgb(235, 29, 132);
+    border: 1px rgb(235, 29, 132) solid ;
+}
+.social-pres .fa:hover{
+    opacity: 0.5;
+}
+.grid-row{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0px 30px;
+    padding: 50px;
+}
+.grid-row-item h3{
+    color: white;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid-row-item ul{
+       list-style: none;
+}
+.grid-row-item ul a{
+    text-decoration: none;
+}
+
+.grid-row-item ul a li{
+    color: rgba(245, 240, 235,0.7);
+    margin: 20px 10px;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.grid-row-item ul a li:hover{
+    color:rgb(245, 240, 235);
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.copyright{
+     
+    text-align: center;
+    color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+ 
+@media(max-width: 700px ){
+    header{
+        min-height:70vh;
+    }
+    .text-box{
+        margin-top: 50px;
+    }
+    .text-box h2{
+        font-size: 15px;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .start{
+        margin-top: 50px;
+        margin-bottom:50px;
+        border: 1px solid rgb(210, 84, 45);
+        border-radius: 15px;
+        background-color:rgb(210, 84, 45) ;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+        width: 150px;
+        height: 50px;
+    }
+    #logo{
+        width: 60px;
+        height: 50px;
+    }
+    #logo-name{
+        text-decoration: none;
+        color:rgb(22, 119, 87);
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:bolder;
+    }
+    .nav-links ul li{
+        display: block;
+ 
+
+    }
+    .nav-links ul li a{
+        color: white;
+    }
+    .nav-links {
+        position : absolute;
+        background-color:  rgb(210, 84, 45);
+        width: 120px;
+        height: 70vh;
+        top:0;
+        right: -200px;   
+        text-align: left;
+        z-index: 2; 
+        transition: 1s;   
+}
+.find-btn{
+    font-size: medium;
+    width: 150px;
+    height: 50px;
+    
+}
+nav .fa-solid{
+    display: block;
+    margin:10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ .nav-links ul{
+    padding:20px;
+ }
+    .course{
+        width: 60%;
+    }
+    .course .title{
+        font-size: 20px;
+    }
+    .course h1{
+        font-size:25px;
+    }
+    .grid-container{
+        grid-template-columns: auto ;
+    }
+    .tut-grid-container{
+     
+        grid-template-columns: auto;
+    }
+    .tutors-info{
+        grid-template-columns: auto;
+        gap: 50px 0px;
+    }
+    .card{
+        align-items: center;
+    }
+    .card img{
+        width :70%;
+    }
+    .name-info{
+        width: 65%;
+    }
+    .grid-row{
+        padding: 0px;
+        padding-top: 50px;
+        grid-template-columns: auto auto ;
+       
+    }
+    footer .search{
+        margin-bottom: 20px;
+    }
+    footer .row1{
+        padding:0px;
+        flex-direction: column;
+    }
+    footer .row1 .search input{
+        width: 60%;
+    }
+
+    
+}
+

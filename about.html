@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>About</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-div">
+          <a href=""><img id="logo" src="./images/transparent.png" alt="" /></a>
+          <a id="logo-name" href=""><p>BrainGate</p></a>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>About Us</h1>
+      </div>
+    </header>
+    <section class="about-content">
+      <div class="our-cnt">
+        <h1 class="our-h1">Our Mission</h1>
+        <p class="our-para">
+          Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt
+          labore et dolore magna aliqua<br />Quis ipsum suspendisces gravida.
+          Risus commodo viverra sebfd dho eiusmod tempor<br />
+          maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod
+          tempor<br />
+          maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod
+          tempor maecenas <br />accumsan lacus. Risus commodo viverra sebfd dho
+          eiusmod tempor maecenas accumsan.
+        </p>
+      </div>
+      <div class="our-cnt">
+        <h1 class="our-h1">Our vision</h1>
+        <p class="our-para">
+          Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt
+          labore et dolore magna aliqua<br />Quis ipsum suspendisces gravida.
+          Risus commodo viverra sebfd dho eiusmod tempor<br />
+          maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod
+          tempor<br />
+          maecenas accumsan lacus. Risus commodo viverra sebfd dho eiusmod
+          tempor maecenas <br />accumsan lacus. Risus commodo viverra sebfd dho
+          eiusmod tempor maecenas accumsan.
+        </p>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="testom fade">
+        <img src="./images/card.png" alt="" class="img-testom" />
+        <p class="para-testom">
+          Consectetur adipiscing elit, sued do eiusmod <br />tempor ididunt
+          udfgt labore et dolore magna aliqua<br />Quis ipsum suspendisces
+          gravida. Risus commodo viverra<br />
+          sebfd dho eiusmod tempor<br />
+        </p>
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <p class="para-testom">James K.Jerrfry - Web Developer</p>
+      </div>
+      <div class="testom fade">
+        <img src="./images/team.png" alt="" class="img-testom" />
+        <p class="para-testom">
+          Consectetur adipiscing elit, sued do eiusmod <br />tempor ididunt
+          udfgt labore et dolore magna aliqua<br />Quis ipsum suspendisces
+          gravida. Risus commodo viverra<br />
+          sebfd dho eiusmod tempor<br />
+        </p>
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <p class="para-testom">James K.Jerrfry - Web Developer</p>
+      </div>
+      <div class="testom fade">
+        <img src="./images/brain.png" alt="" class="img-testom" />
+        <p class="para-testom">
+          Consectetur adipiscing elit, sued do eiusmod <br />tempor ididunt
+          udfgt labore et dolore magna aliqua<br />Quis ipsum suspendisces
+          gravida. Risus commodo viverra<br />
+          sebfd dho eiusmod tempor<br />
+        </p>
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <p class="para-testom">James K.Jerrfry - Web Developer</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!--------------------------Footer----------------------------------->
+    <footer>
+      <div class="row1">
+        <div class="search">
+          <h3>Stay Updated</h3>
+          <input placeholder="Enter your email" type="email" />
+          <button>Subscribe now</button>
+        </div>
+        <div class="social-pres">
+          <h3>Find Us</h3>
+          <a href="#" class="fa fa-facebook" alt="FB"></a>
+          <a href="#" class="fa fa-twitter" alt="TW"></a>
+          <a href="#" class="fa fa-linkedin" alt="LK"></a>
+          <a href="#" class="fa fa-google" alt="GL"></a>
+          <a href="#" class="fa fa-instagram" alt="IG"></a>
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-row-item">
+          <h3>About Us</h3>
+          <ul class="footer-cnt">
+            <a href="#"><li>Online Learning</li></a>
+            <a href="#"><li>About US</li></a>
+            <a href="#"><li>Careers</li></a>
+            <a href="#"><li>Press Center</li></a>
+            <a href="#"><li>Become An Instructor</li></a>
+          </ul>
+        </div>
+
+        <div class="grid-row-item">
+          <h3>Campus</h3>
+          <ul>
+            <a href="#"><li>Our Plans</li></a>
+            <a href="#"><li>Free Trial</li></a>
+            <a href="#"><li>Academic Solutions</li></a>
+            <a href="#"><li>Business Solutions</li></a>
+            <a href="#"><li>Government Solutions</li></a>
+          </ul>
+        </div>
+
+        <div class="grid-row-item">
+          <h3>Study</h3>
+          <ul>
+            <a href="#"><li>Admissions Policy</li></a>
+            <a href="#"><li>Getting Started</li></a>
+            <a href="#"><li>Online Application</li></a>
+            <a href="#"><li>Visa Information</li></a>
+            <a href="#"><li>Tuition Calculator</li></a>
+          </ul>
+        </div>
+
+        <div class="grid-row-item">
+          <h3>Support</h3>
+          <ul>
+            <a href="#"><li>Support</li></a>
+            <a href="#"><li>Contact Us</li></a>
+            <a href="#"><li>System Requirements</li></a>
+            <a href="#"><li>Register Activation Key</li></a>
+            <a href="#"><li>Site feedback</li></a>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        copyright &copy;2023 All rights reserved | made by Leema
+      </p>
+    </footer>
+
+    <!-----------Script------------>
+    <script>
+      const navLinks = document.getElementById("nav-links");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("testom");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,631 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding: 0;
+     
+    
+}
+
+header{
+    min-height: 40vh;
+    width:100%;
+    background-color: rgb(164,223,185,0.7);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo-div{
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width: 90px;
+    height: 70px;
+}
+#logo-name{
+    text-decoration: none;
+    color:rgb(22, 119, 87);
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:rgb(22, 119, 87);
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+
+}
+.nav-links ul li a:hover{
+  color:rgb(112, 182, 147)
+
+}
+.text-box{
+    width:90%;
+    color: rgb(97, 55, 119);
+    position:absolute;
+    top:50%;
+    left: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 40px;
+    margin: 15px;
+}
+nav .fa-solid{
+    display: none;
+}
+footer{
+    
+    min-height: 60%;
+    background-color: rgba(210, 84, 45,0.7);
+    padding: 100px;
+}
+footer .row1{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:50px;
+}
+
+footer .row1 .search h3{
+          color: white;
+          margin-bottom: 20px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search input{
+    border: 1px rgb(204, 203, 203) solid;
+    /* border-radius: 8px; */
+    width: 300px;
+    height: 30px;
+    padding: 8px;
+    margin: 0;
+}
+.search input:hover{
+   border: 2px rgb(30, 1, 37) solid;
+}
+.search button{
+    border: 1px solid rgb(102, 6, 94);
+    border-radius: 0px;
+    margin: 0;
+    height: 48px;
+    background-color: rgb(102, 6, 94);
+    color: rgb(232, 231, 238);
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search button:hover{
+    background-color: transparent;
+    color:rgb(102, 6, 94) ;
+    cursor: pointer;
+}
+ 
+.social-pres h3{
+    color: white;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.social-pres .fa{
+     
+    border-radius:20px;
+    text-decoration: none;
+    padding: 20px;
+    margin:5px;
+    font-size: 20px;
+    color:white;
+}
+.social-pres .fa-facebook{
+    background-color: rgb(115, 122, 218);
+    border: 1px rgb(115, 122, 218) solid ;
+}
+.social-pres .fa-twitter{
+    background-color: rgb(3, 41, 77);
+    border: 1px rgb(3, 41, 77) solid ;
+}
+.social-pres .fa-linkedin{
+    background-color: rgb(59, 60, 156);
+    border: 1px rgb(59, 60, 156) solid ;
+}
+.social-pres .fa-google{
+    background-color: rgb(221, 71, 1);
+    border: 1px rgb(221, 71, 1) solid ;
+}
+.social-pres .fa-instagram{
+    background-color: rgb(235, 29, 132);
+    border: 1px rgb(235, 29, 132) solid ;
+}
+.social-pres .fa:hover{
+    opacity: 0.5;
+}
+.grid-row{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0px 30px;
+    padding: 50px;
+}
+.grid-row-item h3{
+    color: white;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid-row-item ul{
+       list-style: none;
+}
+.grid-row-item ul a{
+    text-decoration: none;
+}
+
+.grid-row-item ul a li{
+    color: rgba(245, 240, 235,0.7);
+    margin: 20px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.grid-row-item ul a li:hover{
+    color:rgb(245, 240, 235);
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.copyright{
+     
+    text-align: center;
+    color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+ 
+
+
+/*--------------------------------------------Courses--------------------------------*/
+.course{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course .title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(210, 84, 45);
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+
+}
+.course h1{
+    font-size: 39px;
+    font-weight: 700;
+    color:rgb(61, 6, 87);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px;
+}
+.reviews{
+    max-height: fit-content;
+    background-color: rgb(15, 228, 157);
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+.checked {
+    color: orange;
+  }
+  .stars{
+   display: flex;
+   justify-content: center;
+   
+}
+.img-testom{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.para-testom{
+    line-height: 30px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 249, 249);
+    margin: 40px;
+
+}
+
+/* ---------------------------------Content-------------- */
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: fit-content;
+    max-width: 100%;
+    padding-bottom: 10vw;
+}
+.our-cnt{
+    max-width: 80%;
+    padding-top: 100px;
+
+}
+.our-h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0px;
+    font-weight: 600;
+    color: rgb(61, 6, 87);
+}
+
+.our-para{
+    line-height: 30px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(71, 69, 69);
+    
+}
+.content {
+    display: flex;
+  }
+  
+  .item {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .item.active {
+    opacity: 1;
+  }
+
+.testom{
+    display: none;
+}
+.prev, .next {
+    /* float: left; */
+    cursor: pointer;
+    /* position: absolute; */
+    margin: 80px;
+    /* margin: 0 50%; */
+    width: auto;
+   /* margin-top: -22px; */
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* -------------------------------------------------------Contact Us------------------------------------------- */
+ 
+  .form{
+    max-width: 80%;
+    max-height: 90vh;
+    margin: 50px auto;
+
+  }
+  .outter-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  form{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 30px 0px;
+    width:auto;
+    
+
+  }
+  .first-row{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .first-row input{
+    height: 40px;
+    width: 200x;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(119, 116, 116,0.5);
+    box-shadow: none;
+  }
+ textarea{
+    height: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid rgba(119, 116, 116,0.5);
+}
+.subject{
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid rgba(119, 116, 116,0.5);
+
+}
+form button{
+    background-color: rgb(61, 6, 87);
+    width:100px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    font-weight: 200;
+}
+button:hover{
+    opacity: 0.7;
+    transition: 1s;
+}
+.address ul{
+    list-style: none;
+    
+}
+.address ul li{
+    display: flex;
+    flex-direction: row;
+}
+ 
+.para-add{
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+.address ul li img{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+
+}
+/* ---------------------------------------------Coursespage----------------------------------- */
+.grid-container {
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: auto auto auto;
+   
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(3, 77, 52,0.2);
+    padding: 40px;
+    text-align:left;
+    box-sizing: border-box;
+}
+.grid-item:hover{
+    background-color: rgba(3, 77, 52,0.5);
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.grid-container .grid-item  p {
+    font-size: 15px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: -12px;
+}
+.grid-container .grid-item  a {
+    text-decoration: none;
+    padding: 10px;
+    margin: -12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color :  rgb(3, 77, 52);
+}
+.find-btn{
+    margin-top: 50px;
+    border: 1px solid rgb(61, 6, 87);
+    border-radius: 15px;
+    background-color:rgb(61, 6, 87);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    width: 200px;
+    height: 60px;
+    
+}
+ 
+.find-btn:hover{
+    background-color: transparent ;
+    color:rgb(61, 6, 87);
+    transition-duration: 1s;
+
+}
+/*---------------------------------courses-------------------------------------*/
+ 
+.tut-grid-container{
+    display: grid;
+    gap: 0px 50px;
+    grid-template-columns: auto auto auto ;
+}
+.tut-gird-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+}
+.tut-img{
+    max-width:300px;
+    max-height:226px;
+}
+.rating{
+    border:1px solid rgba(3, 77, 52,0.2); 
+    padding:40px;
+  
+}
+.rating h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(3, 77, 52);
+}
+.checked {
+    color: orange;
+  }
+.tut-img:hover{
+    transform: scale(1.4);
+    transition: 1s;
+}
+.stars{
+     padding: 20px;
+     margin:30px;
+    
+}
+.fa{
+    float:left;
+}
+.rev-num{
+    float: right;
+    color:rgba(3, 77, 52,0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin-left:20px;
+}
+/* --------------------------------------course-------------------------------------------- */
+.courses-pg{
+    max-width: 80%;
+    margin : 100px auto;
+}
+
+
+
+  /* -----------------------media query----------------------------------------------------- */
+
+  @media(max-width:700px){
+    header{
+        min-height:50vh;
+    }
+    .text-box h2{
+        font-size: 20px;
+    }
+    .text-box h1{
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+ 
+
+    }
+    .nav-links ul li a{
+        color: white;
+    }
+    .nav-links {
+        position : absolute;
+        background-color:  rgb(83, 6, 73);
+        width: 120px;
+        height: 50vh;
+        top:0;
+        right: -200px;   
+        text-align: left;
+        z-index: 2; 
+        transition: 1s;
+     
+}
+nav .fa-solid{
+    display: block;
+    margin:10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ .nav-links ul{
+    padding:20px;
+ }
+ .grid-row{
+    padding: 0px;
+    padding-top: 50px;
+    grid-template-columns: auto auto ;
+}
+.footer{
+    max-height: fit-content;
+    padding: 65px;
+}
+
+ footer .row1{
+    padding:0px;
+    flex-direction: column;
+}
+footer .row1 .search input{
+    width: 90%;
+}
+.reviews{
+    margin-top: 50px;
+}
+.our-h1{
+    font-weight: 400;
+}
+.our-para{
+    font-size:small ;
+}
+.prev, .next {
+    margin:35px;
+}
+.search{
+    margin-bottom:40px;
+}
+.outter-flex{
+    flex-direction: column;
+}
+.grid-container{
+    grid-template-columns: auto ;
+}
+.tut-grid-container{
+ 
+    grid-template-columns: auto;
+}
+}
